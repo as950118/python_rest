@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <div>
+    <div>
+      <a href="/main"><h1>main</a>
+    </div>
+    <p></p>
+    <div>
+      <div>
+        <a href="/signup">signup</a>
+      </div>
+      <div>
+        {% if usr %} <!--로그인 상태라면 -->
+          <a href="/registration/logout">logout</a>
+        {% else %} <!--로그인 상태가 아니라면-->
+          <a href="/registration/login">login</a>
+        {% endif %}
+      </div>
+      <div>
+        <a href="/rofile">profile</a>
+      </div>
+    </div>
+    <p></p>
+    <div>
+      <div>
+        <a href="/bbs">bbs</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
